@@ -212,6 +212,8 @@ class MqttHandler:
                 code = payload["password"]
             elif "pincode" in payload:
                 code = payload["pincode"]
+            elif "action_code" in payload:
+                code = payload["action_code"]
 
             if "area" in payload and payload["area"]:
                 area = payload["area"]
